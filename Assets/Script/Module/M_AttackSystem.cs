@@ -9,6 +9,10 @@ public class M_AttackSystem : Module_Base
     bool NextCombo = false;
 
 
+    private Vector2 debugBoxCenter;
+    private Vector2 debugBoxSize;
+    private bool showDebugBox = false;
+
     void Start()
     {
         // 콤보공격의 갯수 등록
@@ -76,5 +80,60 @@ public class M_AttackSystem : Module_Base
         NextCombo = false;
     }
 
+
+    public void AttackHitCheck(float range)
+    {
+        // 방향
+        float direction = owner.transform.localScale.x > 0 ? -1f : 1;
+
+
+
+        // 박스의 크기와 중심
+        SpriteRenderer Sprite = owner.Mesh.GetComponent<SpriteRenderer>();
+        float height = Sprite.bounds.size.y;
+        float width = range;
+
+
+        Vector2 boxSize = new Vector2(width, height);
+
+
+
+        Vector2 origin = owner.transform.position;
+        origin.y += Sprite.bounds.size.y /2;
+        Vector2 boxCenter = origin + new Vector2(direction * (range / 2), 0);
+
+        
+
+        // 레이어
+        LayerMask Layer = owner.CharacterType == ECharacterType.Player 
+            ? LayerMask.GetMask("Monster") : LayerMask.GetMask("Player");
+
+
+        // 충돌 검사
+        Collider2D[] hits = Physics2D.OverlapBoxAll(boxCenter, boxSize, 0f, Layer);
+
+
+        foreach (var hit in hits)
+        {
+            Character_Base character = hit.gameObject.GetComponent<Character_Base>();
+            if(character)
+                character.Damage.TakeDamage(5.0f);
+
+        }
+
+        debugBoxCenter = boxCenter;
+        debugBoxSize = boxSize;
+        showDebugBox = true;
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (showDebugBox)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(debugBoxCenter, debugBoxSize);
+        }
+    }
 
 }

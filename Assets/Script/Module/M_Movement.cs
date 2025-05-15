@@ -38,7 +38,7 @@ public class M_Movement : Module_Base
 
         GroundLayer = LayerMask.GetMask("Ground");
 
-        footOffset = GetComponent<SpriteRenderer>().bounds.extents.y;
+        footOffset = owner.Mesh.GetComponent<SpriteRenderer>().bounds.extents.y;
     }
 
 
@@ -127,6 +127,8 @@ public class M_Movement : Module_Base
     // มกวม
     public void Jump()
     {
+        if (owner.Stats.CharacterState == ECharacterState.Attacking) return;
+
         if (IsGrounded && !IsJumping && Rig2D)
         {
             Rig2D.linearVelocity = new Vector2(Rig2D.linearVelocity.x, 0);
@@ -159,8 +161,12 @@ public class M_Movement : Module_Base
             return;
         }
 
-        if (owner.Stats.CharacterState != ECharacterState.Attacking)
-            Rig2D.linearVelocity = new Vector2(moveInput.x * owner.Stats.Speed, Rig2D.linearVelocity.y);
+        float speed = moveInput.x * owner.Stats.Speed;
+        if (owner.Stats.CharacterState == ECharacterState.Attacking)
+            speed /= 2;
+
+
+        Rig2D.linearVelocity = new Vector2(speed, Rig2D.linearVelocity.y);
 
         owner.Animation.WalikingAnimator(moveInput.x);
     }

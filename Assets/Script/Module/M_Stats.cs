@@ -23,16 +23,16 @@ public class M_Stats : Module_Base
 
 
     [Header("±‚∫ª Ω∫≈»")]
-    public int maxHP = 100;
-    public int currentHP;
+    public int MaxHP = 100;
+    public int CurrentHP;
 
-    public int maxMP = 50;
-    public int currentMP;
+    public int MaxMP = 50;
+    public int CurrentMP;
 
-    public int maxStamina = 100;
-    public int currentStamina;
+    public int MaxStamina = 100;
+    public int CurrentStamina;
 
-    public int attackPower = 10;
+    public int AttackPower = 10;
 
     public float Speed = 3;
     public float JumpPower = 6;
@@ -46,9 +46,9 @@ public class M_Stats : Module_Base
 
     private void Start()
     {
-        currentHP = maxHP;
-        currentMP = maxMP;
-        currentStamina = maxStamina;
+        CurrentHP = MaxHP;
+        CurrentMP = MaxMP;
+        CurrentStamina = MaxStamina;
     }
 
 }
