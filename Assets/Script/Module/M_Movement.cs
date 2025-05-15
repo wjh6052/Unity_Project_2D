@@ -83,26 +83,33 @@ public class M_Movement : Module_Base
     // 슬라이딩
     public void OnSliding()
     {
-        if (owner.Stats.CharacterState != ECharacterState.Idle) return;
+        switch(owner.Stats.CharacterState)
+        {
+            case ECharacterState.Idle:
+                break;
 
+            case ECharacterState.Attacking:
+                owner.AttackSystem.EndAttack();
+                break;
+
+            default:
+                return;
+        }
 
         // 슬라이딩 콜리전의 크기만큼 포지션을 맞추기
-        Vector2 size = ColliderSize;
-        size.y = 0.2f;
-        OwnerCollider.size = size;
-
-        owner.transform.position -= new Vector3(0, (ColliderSize.y - size.y) / 2, 0);
+        //Vector2 size = ColliderSize;
+        //size.y = 0.2f;
+        //OwnerCollider.size = size;
+        //owner.transform.position -= new Vector3(0, (ColliderSize.y - size.y) / 2, 0);
 
         SlideTimer = owner.Stats.SlideDirection;
-
-
-
         IsSliding = true;
     }
 
     void MoveSliding()
     {
         owner.Animation.OnSliding(true);
+        owner.Stats.CharacterState = ECharacterState.Sliding;
         float facingDir = -Mathf.Sign(owner.transform.localScale.x);
         Rig2D.linearVelocity = new Vector2(facingDir * owner.Stats.SlideSpeed, Rig2D.linearVelocity.y);
 
@@ -110,6 +117,7 @@ public class M_Movement : Module_Base
         SlideTimer -= Time.fixedDeltaTime;
         if (SlideTimer <= 0f)
         {
+            owner.Stats.CharacterState = ECharacterState.Idle;
             OwnerCollider.size = ColliderSize;
             IsSliding = false;
             owner.Animation.OnSliding(false);
@@ -133,7 +141,9 @@ public class M_Movement : Module_Base
     {
         IsJumping = false;
         owner.Animation.OnFalling(false);
-        owner.Stats.CharacterState = ECharacterState.Idle;
+
+        if (owner.Stats.CharacterState == ECharacterState.Falling)
+            owner.Stats.CharacterState = ECharacterState.Idle;
     }
 
      
@@ -149,7 +159,9 @@ public class M_Movement : Module_Base
             return;
         }
 
-        Rig2D.linearVelocity = new Vector2(moveInput.x * owner.Stats.Speed, Rig2D.linearVelocity.y);
+        if (owner.Stats.CharacterState != ECharacterState.Attacking)
+            Rig2D.linearVelocity = new Vector2(moveInput.x * owner.Stats.Speed, Rig2D.linearVelocity.y);
+
         owner.Animation.WalikingAnimator(moveInput.x);
     }
 

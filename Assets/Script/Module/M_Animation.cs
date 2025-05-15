@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class M_Animation : Module_Base
 {
-    Animator OwnerAnimator;
+    public Animator OwnerAnimator;
 
     
 
@@ -12,7 +12,12 @@ public class M_Animation : Module_Base
         OwnerAnimator = owner.GetComponent<Animator>();
     }
 
-    
+    // 애니메이션 파라미터
+    public void IdleTrigger()
+    {
+        OwnerAnimator.SetTrigger("IdleTrigger");
+    }
+
     public void WalikingAnimator(float moveX)
     {
         bool bOnMove = moveX != 0;
@@ -45,4 +50,11 @@ public class M_Animation : Module_Base
     {
         OwnerAnimator.SetBool("Sliding", bOnSliding);
     }
+
+    public void AttackStart(int SkillNum)
+    {
+        OwnerAnimator.Play($"{owner.CharacterType.ToString()} Attack{SkillNum}");
+    }
+
+ 
 }

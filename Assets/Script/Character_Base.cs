@@ -1,15 +1,32 @@
 using UnityEngine;
 
+public enum ECharacterType
+{
+    none,
+    Player
+}
+
 public class Character_Base : MonoBehaviour
 {
-    [HideInInspector]
-    public M_Movement Movement;
-
+    // 스텟
     [HideInInspector]
     public M_Stats Stats;
 
+    // 움직임
+    [HideInInspector]
+    public M_Movement Movement;
+
+    // 애니메이터
     [HideInInspector]
     public M_Animation Animation;
+
+    // 공격기능
+    [HideInInspector]
+    public M_AttackSystem AttackSystem;
+
+
+    // 캐릭터의 타입
+    public ECharacterType CharacterType;
 
 
     protected virtual void Awake()
@@ -22,6 +39,10 @@ public class Character_Base : MonoBehaviour
 
         Animation = gameObject.AddComponent<M_Animation>();
         Animation.SetOwner(this);
+
+        AttackSystem = gameObject.AddComponent<M_AttackSystem>();
+        AttackSystem.SetOwner(this);
+        
     }
 
 

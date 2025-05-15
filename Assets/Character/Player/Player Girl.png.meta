@@ -494,12 +494,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 1365
-        width: 18
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 49
+        y: 1366
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -516,12 +516,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_1
       rect:
         serializedVersion: 2
-        x: 157
-        y: 1365
-        width: 23
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 158
+        y: 1366
+        width: 21
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,12 +538,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_2
       rect:
         serializedVersion: 2
-        x: 269
-        y: 1368
-        width: 23
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 270
+        y: 1369
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -560,12 +560,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_3
       rect:
         serializedVersion: 2
-        x: 381
-        y: 1371
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 382
+        y: 1372
+        width: 22
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -582,12 +582,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_4
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1373
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 493
+        y: 1374
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -604,12 +604,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_5
       rect:
         serializedVersion: 2
-        x: 606
-        y: 1371
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 607
+        y: 1372
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -626,12 +626,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_6
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1366
-        width: 18
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 721
+        y: 1367
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -648,12 +648,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_7
       rect:
         serializedVersion: 2
-        x: 831
-        y: 1365
-        width: 18
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 832
+        y: 1366
+        width: 16
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -670,12 +670,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_8
       rect:
         serializedVersion: 2
-        x: 944
-        y: 1365
-        width: 17
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 945
+        y: 1366
+        width: 15
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -692,12 +692,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 1365
-        width: 16
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1057
+        y: 1366
+        width: 14
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -714,12 +714,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 1365
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1169
+        y: 1366
+        width: 15
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -736,12 +736,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1277
-        y: 1365
-        width: 21
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1278
+        y: 1366
+        width: 19
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -758,12 +758,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_12
       rect:
         serializedVersion: 2
-        x: 43
-        y: 1232
-        width: 22
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 1233
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -780,12 +780,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_13
       rect:
         serializedVersion: 2
-        x: 154
-        y: 1233
-        width: 24
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 155
+        y: 1234
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -802,12 +802,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_14
       rect:
         serializedVersion: 2
-        x: 266
-        y: 1235
-        width: 25
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 267
+        y: 1236
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -824,12 +824,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_15
       rect:
         serializedVersion: 2
-        x: 378
-        y: 1238
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 379
+        y: 1239
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -846,12 +846,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_16
       rect:
         serializedVersion: 2
-        x: 491
-        y: 1240
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 492
+        y: 1241
+        width: 23
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -868,12 +868,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_17
       rect:
         serializedVersion: 2
-        x: 604
-        y: 1238
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 605
+        y: 1239
+        width: 22
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -890,12 +890,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_18
       rect:
         serializedVersion: 2
-        x: 715
-        y: 1234
-        width: 23
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 716
+        y: 1235
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -912,12 +912,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_19
       rect:
         serializedVersion: 2
-        x: 829
-        y: 1232
-        width: 19
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 830
+        y: 1233
+        width: 17
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -934,12 +934,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_20
       rect:
         serializedVersion: 2
-        x: 942
-        y: 1232
-        width: 17
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 943
+        y: 1233
+        width: 15
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -956,12 +956,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_21
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 1232
-        width: 17
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1055
+        y: 1233
+        width: 15
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -978,12 +978,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_22
       rect:
         serializedVersion: 2
-        x: 1165
-        y: 1232
-        width: 20
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1166
+        y: 1233
+        width: 18
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1000,12 +1000,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_23
       rect:
         serializedVersion: 2
-        x: 1276
-        y: 1232
-        width: 22
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1277
+        y: 1233
+        width: 20
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1022,12 +1022,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_24
       rect:
         serializedVersion: 2
-        x: 43
-        y: 1099
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 1100
+        width: 21
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1044,12 +1044,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_25
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1099
-        width: 25
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 151
+        y: 1100
+        width: 23
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1066,12 +1066,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_26
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1099
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 265
+        y: 1100
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1088,12 +1088,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_27
       rect:
         serializedVersion: 2
-        x: 378
-        y: 1099
-        width: 25
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 379
+        y: 1100
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1110,12 +1110,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_28
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1099
-        width: 26
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 493
+        y: 1100
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1132,12 +1132,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_29
       rect:
         serializedVersion: 2
-        x: 604
-        y: 1099
-        width: 29
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 605
+        y: 1100
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1154,12 +1154,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_30
       rect:
         serializedVersion: 2
-        x: 713
-        y: 1099
-        width: 31
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 714
+        y: 1100
+        width: 29
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1176,12 +1176,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_31
       rect:
         serializedVersion: 2
-        x: 824
-        y: 1099
-        width: 29
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 825
+        y: 1100
+        width: 27
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1198,12 +1198,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_32
       rect:
         serializedVersion: 2
-        x: 938
-        y: 1099
-        width: 26
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 939
+        y: 1100
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1220,12 +1220,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_33
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 1099
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1051
+        y: 1100
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1242,12 +1242,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_34
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 1099
-        width: 21
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1167
+        y: 1100
+        width: 19
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1264,12 +1264,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_35
       rect:
         serializedVersion: 2
-        x: 1281
-        y: 1101
-        width: 16
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1282
+        y: 1102
+        width: 14
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1286,12 +1286,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_36
       rect:
         serializedVersion: 2
-        x: 49
-        y: 968
-        width: 16
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 50
+        y: 969
+        width: 14
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1308,12 +1308,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_37
       rect:
         serializedVersion: 2
-        x: 161
-        y: 968
-        width: 16
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 162
+        y: 969
+        width: 14
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1330,12 +1330,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_38
       rect:
         serializedVersion: 2
-        x: 273
-        y: 970
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 274
+        y: 971
+        width: 15
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1352,12 +1352,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_39
       rect:
         serializedVersion: 2
-        x: 381
-        y: 970
-        width: 24
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 382
+        y: 971
+        width: 22
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1374,12 +1374,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_40
       rect:
         serializedVersion: 2
-        x: 492
-        y: 970
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 493
+        y: 971
+        width: 24
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1396,12 +1396,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_41
       rect:
         serializedVersion: 2
-        x: 603
-        y: 970
-        width: 27
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 604
+        y: 971
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1418,12 +1418,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_42
       rect:
         serializedVersion: 2
-        x: 714
-        y: 969
-        width: 28
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 715
+        y: 970
+        width: 26
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1440,12 +1440,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_43
       rect:
         serializedVersion: 2
-        x: 827
-        y: 968
-        width: 27
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 828
+        y: 969
+        width: 25
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1462,12 +1462,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_44
       rect:
         serializedVersion: 2
-        x: 939
-        y: 967
-        width: 26
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 940
+        y: 968
+        width: 24
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1484,12 +1484,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_45
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 966
-        width: 27
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1052
+        y: 967
+        width: 25
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1506,12 +1506,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_46
       rect:
         serializedVersion: 2
-        x: 1163
-        y: 966
-        width: 27
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1164
+        y: 967
+        width: 25
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1528,12 +1528,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_47
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 966
-        width: 27
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1276
+        y: 967
+        width: 25
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1550,12 +1550,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_48
       rect:
         serializedVersion: 2
-        x: 45
-        y: 833
-        width: 25
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 46
+        y: 834
+        width: 23
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1572,12 +1572,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_49
       rect:
         serializedVersion: 2
-        x: 157
-        y: 833
-        width: 21
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 158
+        y: 834
+        width: 19
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1594,12 +1594,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_50
       rect:
         serializedVersion: 2
-        x: 271
-        y: 833
-        width: 19
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 272
+        y: 834
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1616,12 +1616,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_51
       rect:
         serializedVersion: 2
-        x: 385
-        y: 833
-        width: 18
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 386
+        y: 834
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1638,12 +1638,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_52
       rect:
         serializedVersion: 2
-        x: 494
-        y: 833
-        width: 30
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 495
+        y: 834
+        width: 28
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1660,12 +1660,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_53
       rect:
         serializedVersion: 2
-        x: 606
-        y: 833
-        width: 31
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 607
+        y: 834
+        width: 29
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1682,12 +1682,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_54
       rect:
         serializedVersion: 2
-        x: 718
-        y: 833
-        width: 31
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 719
+        y: 834
+        width: 29
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1704,12 +1704,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_55
       rect:
         serializedVersion: 2
-        x: 830
-        y: 833
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 831
+        y: 834
+        width: 30
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1726,12 +1726,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_56
       rect:
         serializedVersion: 2
-        x: 949
-        y: 833
-        width: 18
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 950
+        y: 834
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1748,12 +1748,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_57
       rect:
         serializedVersion: 2
-        x: 1058
-        y: 833
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1059
+        y: 834
+        width: 23
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1770,12 +1770,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_58
       rect:
         serializedVersion: 2
-        x: 1168
-        y: 833
-        width: 25
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1169
+        y: 834
+        width: 23
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1792,12 +1792,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_59
       rect:
         serializedVersion: 2
-        x: 1260
-        y: 833
-        width: 45
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1261
+        y: 834
+        width: 43
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1814,12 +1814,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_60
       rect:
         serializedVersion: 2
-        x: 30
-        y: 700
-        width: 43
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 31
+        y: 701
+        width: 41
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1836,12 +1836,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_61
       rect:
         serializedVersion: 2
-        x: 163
-        y: 700
-        width: 22
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 164
+        y: 701
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1858,12 +1858,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_62
       rect:
         serializedVersion: 2
-        x: 274
-        y: 700
-        width: 20
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 275
+        y: 701
+        width: 18
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1880,12 +1880,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_63
       rect:
         serializedVersion: 2
-        x: 384
-        y: 700
-        width: 22
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 385
+        y: 701
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1902,12 +1902,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_64
       rect:
         serializedVersion: 2
-        x: 493
-        y: 700
-        width: 24
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 494
+        y: 701
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1924,12 +1924,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_65
       rect:
         serializedVersion: 2
-        x: 586
-        y: 700
-        width: 46
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 587
+        y: 701
+        width: 44
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1946,12 +1946,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_66
       rect:
         serializedVersion: 2
-        x: 699
-        y: 700
-        width: 46
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 701
+        width: 44
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1968,12 +1968,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_67
       rect:
         serializedVersion: 2
-        x: 828
-        y: 700
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 829
+        y: 701
+        width: 28
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1990,12 +1990,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_68
       rect:
         serializedVersion: 2
-        x: 942
-        y: 700
-        width: 27
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 943
+        y: 701
+        width: 25
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2012,12 +2012,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_69
       rect:
         serializedVersion: 2
-        x: 1055
-        y: 700
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1056
+        y: 701
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2034,12 +2034,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_70
       rect:
         serializedVersion: 2
-        x: 1169
-        y: 700
-        width: 19
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1170
+        y: 701
+        width: 17
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2056,12 +2056,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_71
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 700
-        width: 20
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1280
+        y: 701
+        width: 18
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2078,12 +2078,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_72
       rect:
         serializedVersion: 2
-        x: 28
-        y: 567
-        width: 44
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 29
+        y: 568
+        width: 42
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2100,12 +2100,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_73
       rect:
         serializedVersion: 2
-        x: 140
-        y: 567
-        width: 47
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 141
+        y: 568
+        width: 45
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2122,12 +2122,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_74
       rect:
         serializedVersion: 2
-        x: 271
-        y: 567
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 272
+        y: 568
+        width: 27
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2144,12 +2144,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_75
       rect:
         serializedVersion: 2
-        x: 383
-        y: 567
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 384
+        y: 568
+        width: 27
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2166,12 +2166,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_76
       rect:
         serializedVersion: 2
-        x: 495
-        y: 567
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 496
+        y: 568
+        width: 27
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2188,12 +2188,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_77
       rect:
         serializedVersion: 2
-        x: 607
-        y: 567
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 608
+        y: 568
+        width: 27
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2210,12 +2210,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_78
       rect:
         serializedVersion: 2
-        x: 722
-        y: 567
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 723
+        y: 568
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2232,12 +2232,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_79
       rect:
         serializedVersion: 2
-        x: 835
-        y: 567
-        width: 21
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 836
+        y: 568
+        width: 19
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2254,12 +2254,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_80
       rect:
         serializedVersion: 2
-        x: 951
-        y: 567
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 952
+        y: 568
+        width: 30
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2276,12 +2276,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_81
       rect:
         serializedVersion: 2
-        x: 1061
-        y: 567
-        width: 38
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1062
+        y: 568
+        width: 36
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2298,12 +2298,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_82
       rect:
         serializedVersion: 2
-        x: 1171
-        y: 567
-        width: 39
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1172
+        y: 568
+        width: 37
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2320,12 +2320,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_83
       rect:
         serializedVersion: 2
-        x: 1281
-        y: 567
-        width: 43
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1282
+        y: 568
+        width: 41
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2342,12 +2342,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_84
       rect:
         serializedVersion: 2
-        x: 29
-        y: 434
-        width: 57
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 30
+        y: 435
+        width: 55
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2364,12 +2364,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_85
       rect:
         serializedVersion: 2
-        x: 141
-        y: 434
-        width: 52
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 142
+        y: 435
+        width: 50
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2386,12 +2386,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_86
       rect:
         serializedVersion: 2
-        x: 258
-        y: 434
-        width: 49
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 259
+        y: 435
+        width: 47
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2408,12 +2408,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_87
       rect:
         serializedVersion: 2
-        x: 386
-        y: 434
-        width: 33
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 435
+        width: 31
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2430,12 +2430,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_88
       rect:
         serializedVersion: 2
-        x: 498
-        y: 434
-        width: 33
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 499
+        y: 435
+        width: 31
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2452,12 +2452,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_89
       rect:
         serializedVersion: 2
-        x: 611
-        y: 434
-        width: 29
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 612
+        y: 435
+        width: 27
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2474,12 +2474,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_90
       rect:
         serializedVersion: 2
-        x: 724
-        y: 434
-        width: 33
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 725
+        y: 435
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2496,12 +2496,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_91
       rect:
         serializedVersion: 2
-        x: 836
-        y: 434
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 837
+        y: 435
+        width: 30
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2518,12 +2518,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_92
       rect:
         serializedVersion: 2
-        x: 948
-        y: 434
-        width: 35
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 949
+        y: 435
+        width: 33
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2540,12 +2540,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_93
       rect:
         serializedVersion: 2
-        x: 1059
-        y: 434
-        width: 39
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1060
+        y: 435
+        width: 37
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2562,12 +2562,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_94
       rect:
         serializedVersion: 2
-        x: 1169
-        y: 434
-        width: 41
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1170
+        y: 435
+        width: 39
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2584,12 +2584,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_95
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 434
-        width: 45
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1281
+        y: 435
+        width: 43
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2606,12 +2606,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_96
       rect:
         serializedVersion: 2
-        x: 45
-        y: 301
-        width: 25
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 46
+        y: 302
+        width: 23
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2628,12 +2628,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_97
       rect:
         serializedVersion: 2
-        x: 153
-        y: 301
-        width: 33
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 154
+        y: 302
+        width: 31
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2650,12 +2650,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_98
       rect:
         serializedVersion: 2
-        x: 245
-        y: 301
-        width: 57
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 246
+        y: 302
+        width: 55
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2672,12 +2672,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_99
       rect:
         serializedVersion: 2
-        x: 359
-        y: 301
-        width: 56
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 360
+        y: 302
+        width: 54
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2694,12 +2694,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_100
       rect:
         serializedVersion: 2
-        x: 496
-        y: 301
-        width: 33
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 497
+        y: 302
+        width: 31
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2716,12 +2716,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_101
       rect:
         serializedVersion: 2
-        x: 609
-        y: 301
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 610
+        y: 302
+        width: 30
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2738,12 +2738,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_102
       rect:
         serializedVersion: 2
-        x: 721
-        y: 301
-        width: 32
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 722
+        y: 302
+        width: 30
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2760,12 +2760,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_103
       rect:
         serializedVersion: 2
-        x: 833
-        y: 301
-        width: 32
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 834
+        y: 302
+        width: 30
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2782,12 +2782,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_104
       rect:
         serializedVersion: 2
-        x: 944
-        y: 301
-        width: 35
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 945
+        y: 302
+        width: 33
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2804,12 +2804,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_105
       rect:
         serializedVersion: 2
-        x: 1058
-        y: 301
-        width: 32
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1059
+        y: 302
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2826,12 +2826,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_106
       rect:
         serializedVersion: 2
-        x: 1169
-        y: 301
-        width: 29
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1170
+        y: 302
+        width: 27
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2848,12 +2848,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_107
       rect:
         serializedVersion: 2
-        x: 1281
-        y: 301
-        width: 25
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1282
+        y: 302
+        width: 23
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2870,12 +2870,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_108
       rect:
         serializedVersion: 2
-        x: 53
-        y: 168
-        width: 33
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 54
+        y: 169
+        width: 31
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2892,12 +2892,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_109
       rect:
         serializedVersion: 2
-        x: 166
-        y: 168
-        width: 37
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 167
+        y: 169
+        width: 35
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2914,12 +2914,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_110
       rect:
         serializedVersion: 2
-        x: 278
-        y: 168
-        width: 39
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 279
+        y: 169
+        width: 37
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2936,12 +2936,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_111
       rect:
         serializedVersion: 2
-        x: 393
-        y: 168
-        width: 40
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 394
+        y: 169
+        width: 38
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2958,12 +2958,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_112
       rect:
         serializedVersion: 2
-        x: 507
-        y: 168
-        width: 38
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 508
+        y: 169
+        width: 36
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2980,12 +2980,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_113
       rect:
         serializedVersion: 2
-        x: 610
-        y: 168
-        width: 47
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 611
+        y: 169
+        width: 45
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3002,12 +3002,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_114
       rect:
         serializedVersion: 2
-        x: 701
-        y: 168
-        width: 73
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 702
+        y: 169
+        width: 71
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3024,12 +3024,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_115
       rect:
         serializedVersion: 2
-        x: 815
-        y: 168
-        width: 70
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 816
+        y: 169
+        width: 68
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3046,12 +3046,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_116
       rect:
         serializedVersion: 2
-        x: 930
-        y: 168
-        width: 45
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 931
+        y: 169
+        width: 43
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3068,12 +3068,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_117
       rect:
         serializedVersion: 2
-        x: 1042
-        y: 168
-        width: 45
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1043
+        y: 169
+        width: 43
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3090,12 +3090,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_118
       rect:
         serializedVersion: 2
-        x: 1156
-        y: 168
-        width: 43
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1157
+        y: 169
+        width: 41
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3112,12 +3112,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_119
       rect:
         serializedVersion: 2
-        x: 1268
-        y: 168
-        width: 43
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1269
+        y: 169
+        width: 41
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3134,12 +3134,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_120
       rect:
         serializedVersion: 2
-        x: 55
-        y: 35
-        width: 18
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 56
+        y: 36
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3156,12 +3156,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_121
       rect:
         serializedVersion: 2
-        x: 165
-        y: 35
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 166
+        y: 36
+        width: 21
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3178,12 +3178,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_122
       rect:
         serializedVersion: 2
-        x: 277
-        y: 35
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 278
+        y: 36
+        width: 21
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3200,12 +3200,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_123
       rect:
         serializedVersion: 2
-        x: 389
-        y: 35
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 390
+        y: 36
+        width: 21
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3222,12 +3222,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_124
       rect:
         serializedVersion: 2
-        x: 502
-        y: 35
-        width: 23
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 503
+        y: 36
+        width: 21
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3244,12 +3244,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_125
       rect:
         serializedVersion: 2
-        x: 613
-        y: 35
-        width: 27
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 614
+        y: 36
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3266,12 +3266,12 @@ TextureImporter:
       name: red hood itch free Copy-Sheet_126
       rect:
         serializedVersion: 2
-        x: 725
-        y: 35
-        width: 19
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 726
+        y: 36
+        width: 17
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3288,7 +3288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e62966f455312c14f8bed99d25f644de
     internalID: 0
     vertices: []
     indices: 
@@ -3296,7 +3296,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":7,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       red hood itch free Copy-Sheet_0: -6721135113665879219
       red hood itch free Copy-Sheet_1: 8315075887454575397

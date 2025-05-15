@@ -9,6 +9,7 @@ public class M_InputSystem : Module_Base
 
     public InputAction JumpAction;
     public InputAction SlidingAction;
+    public InputAction AttackAction;
 
 
 
@@ -25,6 +26,7 @@ public class M_InputSystem : Module_Base
         moveAction = actionMap.FindAction("Move");
         JumpAction = actionMap.FindAction("Jump");
         SlidingAction = actionMap.FindAction("Sliding");
+        AttackAction = actionMap.FindAction("Attack");
 
 
         moveAction.performed += OnMove;
@@ -34,9 +36,12 @@ public class M_InputSystem : Module_Base
         JumpAction.started += OnJump;
         JumpAction.Enable();
 
-
         SlidingAction.started += OnSliding;
         SlidingAction.Enable();
+
+        AttackAction.started += OnAttack;
+        AttackAction.Enable();
+
     }
 
     private void OnDisable()
@@ -74,5 +79,11 @@ public class M_InputSystem : Module_Base
     {
         if (owner)
             owner.Movement.OnSliding();
+    }
+
+    void OnAttack(InputAction.CallbackContext context)
+    {
+        if (owner)
+            owner.AttackSystem.OnAttack();
     }
 }

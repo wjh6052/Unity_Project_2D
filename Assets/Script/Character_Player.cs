@@ -7,6 +7,8 @@ public class Character_Player : Character_Base
 
     protected override void Awake()
     {
+        CharacterType = ECharacterType.Player;
+
         base.Awake();
         InputSystem = gameObject.AddComponent<M_InputSystem>();
         InputSystem.SetOwner(this);
