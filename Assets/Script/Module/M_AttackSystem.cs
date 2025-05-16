@@ -40,12 +40,13 @@ public class M_AttackSystem : Module_Base
 
     public void OnAttack()
     {
+        
         if (owner.Stats.CharacterState == ECharacterState.Attacking)
         {
             if (CurCombo + 1 < MixCombo)
                 NextCombo = true;
             else
-                NextCombo = false;
+                NextCombo = false;           
         }
         else 
         {
@@ -84,7 +85,7 @@ public class M_AttackSystem : Module_Base
     public void AttackHitCheck(float range)
     {
         // ¹æÇâ
-        float direction = owner.transform.localScale.x > 0 ? -1f : 1;
+        float direction = owner.transform.localScale.x > 0 ? 1f : -1f;
 
 
 
@@ -97,9 +98,9 @@ public class M_AttackSystem : Module_Base
         Vector2 boxSize = new Vector2(width, height);
 
 
-
+        //owner.GetComponent<CapsuleCollider2D>().transform.position;
         Vector2 origin = owner.transform.position;
-        origin.y += Sprite.bounds.size.y /2;
+        //origin.y += Sprite.bounds.size.y /2;
         Vector2 boxCenter = origin + new Vector2(direction * (range / 2), 0);
 
         
@@ -117,7 +118,17 @@ public class M_AttackSystem : Module_Base
         {
             Character_Base character = hit.gameObject.GetComponent<Character_Base>();
             if(character)
-                character.Damage.TakeDamage(5.0f);
+            {
+                float damage = owner.Stats.AttackPower;
+                damage += ((float)CurCombo / 5) * damage;
+                bool isCritical = owner.Stats.CriticalRate >= Random.Range(0f, 100.0f);
+                if (isCritical)
+                {
+                    damage *= owner.Stats.CriticalDamage;
+                }
+
+                character.Damage.TakeDamage(damage, isCritical);
+            }
 
         }
 

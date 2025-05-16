@@ -8,6 +8,8 @@ public class Game_Mgr : MonoBehaviour
     public Transform Damage_Canvas = null; // 캔버스
     public GameObject DmgTxetRoot = null;  // 데미지 텍스트
 
+    // 플레이어
+    public Character_Player PlayerObject;
 
 
     //--- 싱글턴 패턴
@@ -21,7 +23,7 @@ public class Game_Mgr : MonoBehaviour
     }
 
     // 데미지 텍스트 스폰
-    public void SpawnDamageText(float InDamage, Vector3 InPos)
+    public void SpawnDamageText(float InDamage, Vector3 InPos, EDamageType InEDamageType)
     {
         if (Damage_Canvas == null || DmgTxetRoot == null)
             return;
@@ -32,7 +34,7 @@ public class Game_Mgr : MonoBehaviour
         dmgtxt.transform.SetParent(Damage_Canvas);
         DmgTxet_Ctrl dmgtext_C = dmgtxt.GetComponent<DmgTxet_Ctrl>();
         if (dmgtext_C)
-            dmgtext_C.InitDamage(InDamage, EDamageType.Critical);
+            dmgtext_C.InitDamage(InDamage, InEDamageType);
 
         InPos.x += Random.Range(-0.2f, 0.2f);
         InPos.y += 1.1f + Random.Range(-0.1f, 0.1f);

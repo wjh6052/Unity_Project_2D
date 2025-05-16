@@ -19,4 +19,9 @@ public class MeshScript : MonoBehaviour
     {
         CharacterRoot.AttackSystem.AttackHitCheck(range);
     }
+
+    public void EndHit()
+    {
+        CharacterRoot.Damage.EndHit();
+    }
 }

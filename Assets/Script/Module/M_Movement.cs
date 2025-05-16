@@ -29,6 +29,13 @@ public class M_Movement : Module_Base
     float SlideTimer = 0f;
 
 
+    // 밑 점프
+    bool IsDropping = false;
+
+    float DropDuration = 0.5f;      // 콜리전을 종료할 시간
+    float DropDurationTime = 0.0f;  
+
+
     void Start()
     {
         Rig2D = owner.GetComponent<Rigidbody2D>();
@@ -63,11 +70,23 @@ public class M_Movement : Module_Base
             {
                 owner.Stats.CharacterState = ECharacterState.Falling;
                 owner.Animation.OnFalling(true);
-
             }
             else
             {
                 EndFalling();
+            }
+
+            // 밑 점프
+            if(IsDropping)
+            {
+                DropDurationTime -= Time.deltaTime;
+
+                if(DropDurationTime <= 0)
+                {
+                    IsDropping = false;
+                    OwnerCollider.enabled = true; // 콜리전 활성화
+                }
+                
             }
         }
 
@@ -129,13 +148,29 @@ public class M_Movement : Module_Base
     {
         if (owner.Stats.CharacterState == ECharacterState.Attacking) return;
 
+
+
+
         if (IsGrounded && !IsJumping && Rig2D)
         {
-            Rig2D.linearVelocity = new Vector2(Rig2D.linearVelocity.x, 0);
-            Rig2D.AddForce(Vector2.up * owner.Stats.JumpPower, ForceMode2D.Impulse);
+            Debug.Log(moveInput);
+            // 아래방향키를 누르며 점프
+            if (moveInput.y < 0f)
+            {
+                OwnerCollider.enabled = false; // 콜리전 비활성화
 
-            IsJumping = true;
-            owner.Animation.OnJump();
+                DropDurationTime = DropDuration;
+                IsDropping = true;
+            }
+            else // 일반 점프
+            {
+                Rig2D.linearVelocity = new Vector2(Rig2D.linearVelocity.x, 0);
+                Rig2D.AddForce(Vector2.up * owner.Stats.JumpPower, ForceMode2D.Impulse);
+
+                IsJumping = true;
+                owner.Animation.OnJump();
+            }
+            
         }
     }
 
@@ -171,11 +206,11 @@ public class M_Movement : Module_Base
         owner.Animation.WalikingAnimator(moveInput.x);
     }
 
-    public void SetMove(float input)
+    public void SetMove(Vector2 input)
     {
         if (Rig2D == null) return;
 
-        moveInput = new Vector2(input, 0);
+        moveInput = input;
 
     }
 

@@ -63,10 +63,9 @@ public class M_InputSystem : Module_Base
     private void OnMove(InputAction.CallbackContext context)
     {
         Vector2 input = context.ReadValue<Vector2>();
-
-
+        
         if(owner)
-            owner.Movement.SetMove(input.x);
+            owner.Movement.SetMove(input);
     }
 
    void OnJump(InputAction.CallbackContext context)

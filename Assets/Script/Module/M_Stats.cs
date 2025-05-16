@@ -6,6 +6,7 @@ public enum ECharacterState
     Falling,
     Sliding,
     Attacking,
+    Hit,
     Dead
 }
 
@@ -32,7 +33,14 @@ public class M_Stats : Module_Base
     public int MaxStamina = 100;
     public int CurrentStamina;
 
-    public int AttackPower = 10;
+    public float AttackPower = 10;
+    public float CriticalRate = 50;
+    public float CriticalDamage = 1.2f;
+
+
+    // hit후 멈추는 시간
+    public float HitStopDuration = 1.0f;
+
 
     public float Speed = 3;
     public float JumpPower = 6;

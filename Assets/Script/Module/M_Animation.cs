@@ -43,7 +43,7 @@ public class M_Animation : Module_Base
         if (bOnMove)
         {
             Vector3 scale = owner.transform.localScale;
-            scale.x = Mathf.Abs(scale.x) * -Mathf.Sign(moveX); // +1 또는 -1 방향으로 고정
+            scale.x = Mathf.Abs(scale.x) * Mathf.Sign(moveX); // +1 또는 -1 방향으로 고정
             owner.transform.localScale = scale;
         }
            
@@ -72,11 +72,29 @@ public class M_Animation : Module_Base
 
     public void AttackStart(int SkillNum)
     {
-        int stateHash = Animator.StringToHash($"{owner.CharacterType} Attack{SkillNum}");
-        if (!OwnerAnimator.HasState(0, stateHash)) return;
+        if(SkillNum == 0)
+        {
+            if (!IsAnimParameter("AttackTrigger")) return;
 
-        OwnerAnimator.Play($"{owner.CharacterType.ToString()} Attack{SkillNum}");
+            OwnerAnimator.SetTrigger("AttackTrigger");
+        }
+        else
+        {
+            int stateHash = Animator.StringToHash($"{owner.CharacterType} Attack{SkillNum}");
+            if (!OwnerAnimator.HasState(0, stateHash)) return;
+
+            OwnerAnimator.Play($"{owner.CharacterType.ToString()} Attack{SkillNum}");
+        }
+
+        
     }
 
- 
+    public void OnHit()
+    {
+        if (!IsAnimParameter("HitTrigger")) return;
+
+        OwnerAnimator.SetTrigger("HitTrigger");
+    }
+
+
 }
