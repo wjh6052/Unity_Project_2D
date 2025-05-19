@@ -97,4 +97,11 @@ public class M_Animation : Module_Base
     }
 
 
+    public void DeadTrigger()
+    {
+        if (!IsAnimParameter("DeadTrigger")) return;
+
+        OwnerAnimator.SetTrigger("DeadTrigger");
+    }
+
 }

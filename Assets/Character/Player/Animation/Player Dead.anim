@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mushroom Waliking
+  m_Name: Player Dead
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,21 +21,17 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1546141736, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+      value: {fileID: -8992833607914622597, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
     - time: 0.083333336
-      value: {fileID: -1301369233, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+      value: {fileID: -5985179199562584261, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
     - time: 0.16666667
-      value: {fileID: -2012974314, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+      value: {fileID: -2493406522967640180, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
     - time: 0.25
-      value: {fileID: 1005478612, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+      value: {fileID: -3697138388435321246, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
     - time: 0.33333334
-      value: {fileID: -1294328105, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+      value: {fileID: -7451245251281504538, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
     - time: 0.41666666
-      value: {fileID: -14308565, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - time: 0.5
-      value: {fileID: -199482325, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - time: 0.5833333
-      value: {fileID: 65490816, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+      value: {fileID: -7685618065197832640, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -58,20 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1546141736, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: -1301369233, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: -2012974314, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: 1005478612, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: -1294328105, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: -14308565, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: -199482325, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
-    - {fileID: 65490816, guid: eeadd63bf79d20746b51a81f58bdfbf2, type: 3}
+    - {fileID: -8992833607914622597, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
+    - {fileID: -5985179199562584261, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
+    - {fileID: -2493406522967640180, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
+    - {fileID: -3697138388435321246, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
+    - {fileID: -7451245251281504538, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
+    - {fileID: -7685618065197832640, guid: c53fa4ff50af28240a18a4b640e58c0c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666666
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

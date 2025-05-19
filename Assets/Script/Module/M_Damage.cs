@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public enum EDamageType
@@ -30,28 +31,95 @@ public class M_Damage : Module_Base
     }
 
     // 데미지를 받을 함수
-    public void TakeDamage(float InDamage, bool IsCritical, bool IsHill = false)
+    public void TakeDamage(float InDamage, bool isCritical = false, bool IsHill = false)
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
+
+        // 치명타 데미지 적용
+        if (isCritical)
+        {
+            InDamage += (owner.Stats.GetCharacterStats().CriticalDamage * 0.01f);
+        }
+
+        
+        
+
+
+       
+
+
+        // 데미지 텍스트 출력
         EDamageType damageType = EDamageType.Normal;
         if (IsHill)
             damageType = EDamageType.Hill;
-        else if (IsCritical)
+        else if (isCritical)
             damageType = EDamageType.Critical;
 
-
-        // 상태 변경
-        owner.Stats.CharacterState = ECharacterState.Hit;
-
-        // 히트 애니메이션 출력
-        owner.Animation.OnHit();
-
-        // 데미지 텍스트 출력
         Game_Mgr.Inst.SpawnDamageText(InDamage, owner.transform.position, damageType);
+
+
+        // 데미지 적용
+        owner.Stats.CurrentHP -= InDamage;
+        if (owner.Stats.CurrentHP <= 0f) // 죽었을 때
+        {
+            owner.Stats.CharacterState = ECharacterState.Dead;
+            owner.Animation.DeadTrigger();
+
+            
+            return;
+        }
+
+        // 죽지 않았을때
+        owner.Stats.CharacterState = ECharacterState.Hit;
+       
+        owner.Animation.OnHit();
     }
 
     public void EndHit()
     {
-        HitStopDurationTime = owner.Stats.HitStopDuration;
+        HitStopDurationTime = owner.Stats.GetCharacterStats().HitStopDuration;
         owner.Animation.IdleTrigger();
     }
+
+    public IEnumerator Dead(float DestroyTime = 1.0f)
+    {
+        float animationTime = 1.0f; // 흡수 연출은 항상 1초
+
+        // 1. DestroyTime 동안 대기
+        yield return new WaitForSeconds(DestroyTime);
+
+        float elapsed = 0.0f;
+
+        // SpriteRenderer 중심 기준
+        SpriteRenderer sr = owner.GetComponentInChildren<SpriteRenderer>();
+        Vector2 startPos = sr.bounds.center;
+        Vector2 startScale = owner.transform.localScale;
+
+        while (elapsed < animationTime)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / animationTime);
+
+            // 플레이어 현재 위치
+            Vector2 endPos = Game_Mgr.Inst.PlayerObject.transform.position;
+
+            // 중심 보간 이동
+            Vector2 lerpedPos = Vector2.Lerp(startPos, endPos, t);
+            owner.transform.position = lerpedPos - ((Vector2)sr.bounds.center - (Vector2)owner.transform.position);
+
+            // 크기 줄이기
+            owner.transform.localScale = Vector2.Lerp(startScale, Vector2.zero, t);
+
+            yield return null;
+        }
+
+
+        // 보상 지급 예정-------
+
+        //---------------------
+
+        // 제거
+        Destroy(owner.gameObject);
+    }
+
 }

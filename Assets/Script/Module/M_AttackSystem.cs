@@ -119,13 +119,10 @@ public class M_AttackSystem : Module_Base
             Character_Base character = hit.gameObject.GetComponent<Character_Base>();
             if(character)
             {
-                float damage = owner.Stats.AttackPower;
-                damage += ((float)CurCombo / 5) * damage;
-                bool isCritical = owner.Stats.CriticalRate >= Random.Range(0f, 100.0f);
-                if (isCritical)
-                {
-                    damage *= owner.Stats.CriticalDamage;
-                }
+                float damage = owner.Stats.GetCharacterStats().AttackPower;
+                damage += (damage * (float)CurCombo / 5);
+
+                bool isCritical = owner.Stats.GetCharacterStats().CriticalRate >= Random.Range(0f, 100.0f);
 
                 character.Damage.TakeDamage(damage, isCritical);
             }

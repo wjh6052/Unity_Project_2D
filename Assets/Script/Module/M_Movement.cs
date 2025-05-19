@@ -129,7 +129,7 @@ public class M_Movement : Module_Base
     {
         owner.Animation.OnSliding(true);
         owner.Stats.CharacterState = ECharacterState.Sliding;
-        float facingDir = -Mathf.Sign(owner.transform.localScale.x);
+        float facingDir = Mathf.Sign(owner.transform.localScale.x);
         Rig2D.linearVelocity = new Vector2(facingDir * owner.Stats.SlideSpeed, Rig2D.linearVelocity.y);
 
 
@@ -153,19 +153,25 @@ public class M_Movement : Module_Base
 
         if (IsGrounded && !IsJumping && Rig2D)
         {
-            Debug.Log(moveInput);
             // 아래방향키를 누르며 점프
             if (moveInput.y < 0f)
             {
-                OwnerCollider.enabled = false; // 콜리전 비활성화
+                Vector2 point = owner.transform.position;
+                point += Vector2.up * -1f;
+                Collider2D hits = Physics2D.OverlapPoint(point);
 
-                DropDurationTime = DropDuration;
-                IsDropping = true;
+                if(hits.tag != "EndGround")
+                {
+                    OwnerCollider.enabled = false; // 콜리전 비활성화
+
+                    DropDurationTime = DropDuration;
+                    IsDropping = true;
+                }
             }
             else // 일반 점프
             {
                 Rig2D.linearVelocity = new Vector2(Rig2D.linearVelocity.x, 0);
-                Rig2D.AddForce(Vector2.up * owner.Stats.JumpPower, ForceMode2D.Impulse);
+                Rig2D.AddForce(Vector2.up * owner.Stats.GetCharacterStats().JumpPower, ForceMode2D.Impulse);
 
                 IsJumping = true;
                 owner.Animation.OnJump();
@@ -196,7 +202,7 @@ public class M_Movement : Module_Base
             return;
         }
 
-        float speed = moveInput.x * owner.Stats.Speed;
+        float speed = moveInput.x * owner.Stats.GetCharacterStats().Speed;
         if (owner.Stats.CharacterState == ECharacterState.Attacking)
             speed /= 2;
 

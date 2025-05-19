@@ -1,11 +1,10 @@
 using UnityEngine;
 
-public class Character_Mushroom : Character_Base
+public class Character_Mushroom : Character_Monster
 {
     GameObject TargetPlayer;
 
-    // 멈추는 공격 사거리
-    float AttackRange = 1;
+    
 
 
     protected override void Awake()
@@ -41,7 +40,6 @@ public class Character_Mushroom : Character_Base
                 this.AttackSystem.OnAttack();
             }
         }
-
         else
         {
             this.Movement.SetMove(Vector2.zero);

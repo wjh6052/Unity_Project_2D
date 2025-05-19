@@ -24,4 +24,14 @@ public class MeshScript : MonoBehaviour
     {
         CharacterRoot.Damage.EndHit();
     }
+
+    // 죽었을 때 호출
+    public void Dead(float DestroyTime)
+    {
+        if(CharacterRoot.CharacterType != ECharacterType.Player) // 플레이어가 아닐때 빨려들어가는 연출
+        {
+            StartCoroutine(CharacterRoot.Damage.Dead(DestroyTime));
+        }
+
+    }
 }

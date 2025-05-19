@@ -16,10 +16,15 @@ public class Game_Mgr : MonoBehaviour
     public static Game_Mgr Inst = null;
 
 
+    private void Awake()
+    {
+        Inst = this;
+        GlobalValue.InitData();
+    }
 
     void Start()
     {
-        Inst = this;
+        
     }
 
     // 데미지 텍스트 스폰

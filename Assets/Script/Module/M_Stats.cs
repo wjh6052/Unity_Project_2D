@@ -23,40 +23,40 @@ public class M_Stats : Module_Base
     }
 
 
-    [Header("기본 스탯")]
-    public int MaxHP = 100;
-    public int CurrentHP;
+    FCharacterStats CharacterStats;
 
-    public int MaxMP = 50;
-    public int CurrentMP;
+    public FCharacterStats GetCharacterStats() { return CharacterStats; }
 
-    public int MaxStamina = 100;
-    public int CurrentStamina;
-
-    public float AttackPower = 10;
-    public float CriticalRate = 50;
-    public float CriticalDamage = 1.2f;
+    public float CurrentHP;
+    public float CurrentStamina;
 
 
-    // hit후 멈추는 시간
-    public float HitStopDuration = 1.0f;
-
-
-    public float Speed = 3;
-    public float JumpPower = 6;
-
+    // 플레이어 전용
     // 슬라이딩
     public float SlideSpeed = 12.5f;    // 슬라이딩 속도
     public float SlideDirection = 2f;   // 슬라이딩 시간
 
+
     
 
 
-    private void Start()
+    
+
+  
+    void Start()
     {
-        CurrentHP = MaxHP;
-        CurrentMP = MaxMP;
-        CurrentStamina = MaxStamina;
+        foreach(CharacterStatsInfo statsInfo in GlobalValue.CharacterStatsArr)
+        {
+            if (statsInfo.CharacterStats.CharacterType == owner.CharacterType)
+            {
+                this.CharacterStats = statsInfo.CharacterStats;
+
+                CurrentHP = CharacterStats.MaxHP;
+                CurrentStamina = CharacterStats.MaxStamina;
+            }
+        }
+
+        
     }
 
 }
