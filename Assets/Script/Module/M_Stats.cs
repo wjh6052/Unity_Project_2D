@@ -39,8 +39,8 @@ public class M_Stats : Module_Base
 
     // 플레이어 전용
     // 슬라이딩
-    public float SlideSpeed = 12.5f;    // 슬라이딩 속도
-    public float SlideDirection = 1f;   // 슬라이딩 시간
+    public float SlideSpeed = 8f;    // 슬라이딩 속도
+    public float SlideDirection = 0.3f;   // 슬라이딩 시간
 
 
     

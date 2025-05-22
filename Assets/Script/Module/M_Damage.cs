@@ -75,6 +75,9 @@ public class M_Damage : Module_Base
     public void Dead()
     {
         owner.Stats.CharacterState = ECharacterState.Dead;
+        owner.Movement.SetMove(Vector2.zero);
+
+
         owner.Animation.DeadTrigger();
     }
 

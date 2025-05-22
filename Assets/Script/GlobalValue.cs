@@ -9,9 +9,10 @@ public class GlobalValue
     public static void InitData()
     {
         CharacterStatsArr = null;
-        CharacterStatsArr = Resources.LoadAll<CharacterStatsInfo>("StatsInfo");
 
-        
+        CharacterStatsInfo[] temp = Resources.LoadAll<CharacterStatsInfo>("StatsInfo");
+        if (temp[0])
+            CharacterStatsArr = temp;
     }
 
 }

@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.028397521, y: 2.0588331, z: -11}
+  m_LocalPosition: {x: -1.0416025, y: 2.0588331, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 765474488}
   - component: {fileID: 765474487}
   m_Layer: 5
-  m_Name: Damage_Canvas
+  m_Name: World_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,7 +346,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765474486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -460,7 +460,7 @@ Transform:
   m_GameObject: {fileID: 1140842544}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.028397521, y: 2.0588331, z: -11}
+  m_LocalPosition: {x: -1.0416025, y: 2.0588331, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -486,6 +486,87 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!1 &1334475116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1334475119}
+  - component: {fileID: 1334475118}
+  - component: {fileID: 1334475117}
+  m_Layer: 0
+  m_Name: Test Interaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!58 &1334475117
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334475116}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
+--- !u!114 &1334475118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334475116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad90c9f0f19fa743b1d76723e26e882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1334475119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334475116}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.152, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571338415
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,9 +596,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8154533bbc05143823635a189b9798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage_Canvas: {fileID: 765474490}
-  DmgTxetRoot: {fileID: 5377714118742270570, guid: db5864c13824f9a40984273426a82d04, type: 3}
   PlayerObject: {fileID: 2022148666}
+  World_Canvas: {fileID: 765474490}
+  DmgTxetRoot: {fileID: 5377714118742270570, guid: db5864c13824f9a40984273426a82d04, type: 3}
+  InteractionUIRoot: {fileID: 7734438613838890417, guid: 84667f8cc5785e6448d4bb83b0404910, type: 3}
+  TestMapName: DemoScene
 --- !u!4 &1571338417
 Transform:
   m_ObjectHideFlags: 0
@@ -758,6 +841,7 @@ MonoBehaviour:
   AttackSystem: {fileID: 0}
   Damage: {fileID: 0}
   CharacterType: 1
+  PlayerUI: {fileID: 0}
   Confiner: {fileID: 1140842548}
 --- !u!4 &2022148667
 Transform:
@@ -768,7 +852,7 @@ Transform:
   m_GameObject: {fileID: 2022148663}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: -1.07, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -862,5 +946,6 @@ SceneRoots:
   - {fileID: 2022148667}
   - {fileID: 1571338417}
   - {fileID: 2101466503}
-  - {fileID: 765474490}
   - {fileID: 1140842547}
+  - {fileID: 1334475119}
+  - {fileID: 765474490}

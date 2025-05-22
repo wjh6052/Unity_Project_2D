@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DemoScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/PlayerUiScene.unity
     guid: ee165b16ec1557f48bcb70d78b92e8b1
+  - enabled: 1
+    path: Assets/Scenes/DemoScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Map/DarkForest.unity
     guid: b7e9ed1f414527d40bbd0417c0488858

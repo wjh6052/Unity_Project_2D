@@ -1,17 +1,30 @@
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine;
 
 public class Game_Mgr : MonoBehaviour
 {
-
-    // 데미지 텍스트
-    public Transform Damage_Canvas = null; // 캔버스
-    public GameObject DmgTxetRoot = null;  // 데미지 텍스트
-
-    // 플레이어
+    [Header("플레이어 오브젝트")]
     public Character_Player PlayerObject;
 
+
+    [Header("월드 캔버스")]
+    public Transform World_Canvas = null;
+
+
+    [Header("데미지 텍스트")]
+    public GameObject DmgTxetRoot = null;
+
+
+    [Header("상호작용UI")]
+    public GameObject InteractionUIRoot = null;
+    
+
+
+
+    [Header("이동할 맵")]
+    public string TestMapName;
 
     //--- 싱글턴 패턴
     public static Game_Mgr Inst = null;
@@ -25,20 +38,21 @@ public class Game_Mgr : MonoBehaviour
 
     void Start()
     {
+        // 프레임 고정
+        Application.targetFrameRate = 60;
+
         // 테스트
-        SceneManager.LoadScene("DemoScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene(TestMapName, LoadSceneMode.Additive);
     }
 
     // 데미지 텍스트 스폰
     public void SpawnDamageText(float InDamage, Vector3 InPos, EDamageType InEDamageType)
     {
-        if (Damage_Canvas == null || DmgTxetRoot == null)
+        if (World_Canvas == null || DmgTxetRoot == null)
             return;
  
-        //Debug.Log(InDamage);
-
         GameObject dmgtxt = Instantiate(DmgTxetRoot);
-        dmgtxt.transform.SetParent(Damage_Canvas);
+        dmgtxt.transform.SetParent(World_Canvas);
         DmgTxet_Ctrl dmgtext_C = dmgtxt.GetComponent<DmgTxet_Ctrl>();
         if (dmgtext_C)
             dmgtext_C.InitDamage(InDamage, InEDamageType);
@@ -50,6 +64,9 @@ public class Game_Mgr : MonoBehaviour
         dmgtxt.transform.position = InPos;
     }
 
+
+    // 상호작용 UI 스폰
+    
 
     public void SetCameraCollider(PolygonCollider2D InPolygonCollider2D)
     {

@@ -5,6 +5,7 @@ using Unity.Cinemachine;
 public class Character_Player : Character_Base
 {
     M_InputSystem InputSystem;
+    public M_PlayerUI PlayerUI;
 
     public CinemachineConfiner2D Confiner;
 
@@ -17,6 +18,9 @@ public class Character_Player : Character_Base
 
         InputSystem = gameObject.AddComponent<M_InputSystem>();
         InputSystem.SetOwner(this);
+
+        PlayerUI = gameObject.AddComponent<M_PlayerUI>();
+        PlayerUI.SetOwner(this);
     }
 
 

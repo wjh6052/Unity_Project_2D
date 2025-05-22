@@ -10,6 +10,7 @@ public class M_InputSystem : Module_Base
     public InputAction JumpAction;
     public InputAction SlidingAction;
     public InputAction AttackAction;
+    public InputAction InteractionAction;
 
 
 
@@ -24,23 +25,30 @@ public class M_InputSystem : Module_Base
         // 오타 주의: Plyaer
         var actionMap = PlayerInputSystem.FindActionMap("PlayerInput");
         moveAction = actionMap.FindAction("Move");
-        JumpAction = actionMap.FindAction("Jump");
-        SlidingAction = actionMap.FindAction("Sliding");
-        AttackAction = actionMap.FindAction("Attack");
-
-
         moveAction.performed += OnMove;
         moveAction.canceled += OnMove;
         moveAction.Enable();
 
+
+        JumpAction = actionMap.FindAction("Jump");
         JumpAction.started += OnJump;
         JumpAction.Enable();
 
+
+        SlidingAction = actionMap.FindAction("Sliding");
         SlidingAction.started += OnSliding;
         SlidingAction.Enable();
 
+
+        AttackAction = actionMap.FindAction("Attack");
         AttackAction.started += OnAttack;
         AttackAction.Enable();
+
+        InteractionAction = actionMap.FindAction("Interaction");
+        InteractionAction.started += OnInteraction;
+        InteractionAction.Enable();
+
+
 
     }
 
@@ -58,6 +66,9 @@ public class M_InputSystem : Module_Base
         SlidingAction.started -= OnSliding;
         SlidingAction.Disable();
 
+
+        InteractionAction.started -= OnInteraction;
+        InteractionAction.Disable();
     }
 
     private void OnMove(InputAction.CallbackContext context)
@@ -84,5 +95,15 @@ public class M_InputSystem : Module_Base
     {
         if (owner)
             owner.AttackSystem.OnAttack();
+    }
+
+    void OnInteraction(InputAction.CallbackContext context)
+    {
+        if (owner)
+        {
+            Character_Player player = (Character_Player)owner;
+            player.PlayerUI.UesInteraction();
+        }
+        
     }
 }

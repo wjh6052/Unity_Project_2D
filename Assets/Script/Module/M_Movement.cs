@@ -116,14 +116,14 @@ public class M_Movement : Module_Base
                 return;
         }
 
-        // 슬라이딩 콜리전의 크기만큼 포지션을 맞추기
-        //Vector2 size = ColliderSize;
-        //size.y = 0.2f;
-        //OwnerCollider.size = size;
-        //owner.transform.position -= new Vector3(0, (ColliderSize.y - size.y) / 2, 0);
-
         SlideTimer = owner.Stats.SlideDirection;
         IsSliding = true;
+
+        // 상태 변경
+        owner.Stats.CharacterState = ECharacterState.Sliding;
+
+        // 애니메이션 실행
+        owner.Animation.OnSliding(true);
     }
 
     void MoveSliding()
@@ -138,13 +138,6 @@ public class M_Movement : Module_Base
 
             return;
         }
-
-        // 상태 변경
-        owner.Stats.CharacterState = ECharacterState.Sliding;
-
-        // 애니메이션 실행
-        owner.Animation.OnSliding(true);
-
 
         float facingDir = Mathf.Sign(owner.transform.localScale.x);
         Rig2D.linearVelocity = new Vector2(facingDir * owner.Stats.SlideSpeed, Rig2D.linearVelocity.y);
