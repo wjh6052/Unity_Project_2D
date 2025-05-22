@@ -1,3 +1,4 @@
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -24,7 +25,8 @@ public class Game_Mgr : MonoBehaviour
 
     void Start()
     {
-        
+        // 테스트
+        SceneManager.LoadScene("DemoScene", LoadSceneMode.Additive);
     }
 
     // 데미지 텍스트 스폰
@@ -48,4 +50,13 @@ public class Game_Mgr : MonoBehaviour
         dmgtxt.transform.position = InPos;
     }
 
+
+    public void SetCameraCollider(PolygonCollider2D InPolygonCollider2D)
+    {
+        if (!InPolygonCollider2D) return;
+
+        PlayerObject.Confiner.BoundingShape2D = InPolygonCollider2D;
+
+
+    }
 }

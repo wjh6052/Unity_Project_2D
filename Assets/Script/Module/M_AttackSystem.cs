@@ -13,12 +13,23 @@ public class M_AttackSystem : Module_Base
     private Vector2 debugBoxSize;
     private bool showDebugBox = false;
 
+    float AttackDelay = 0;
+
+
     void Start()
     {
         // 콤보공격의 갯수 등록
         CheckAttackCount();
     }
 
+    void Update()
+    {
+        if (AttackDelay >= 0)
+        {
+            AttackDelay -= Time.deltaTime;
+        }
+        
+    }
 
     void CheckAttackCount()
     {
@@ -40,7 +51,9 @@ public class M_AttackSystem : Module_Base
 
     public void OnAttack()
     {
-        
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
+        if (AttackDelay >= 0) return;
+
         if (owner.Stats.CharacterState == ECharacterState.Attacking)
         {
             if (CurCombo + 1 < MixCombo)
@@ -59,7 +72,7 @@ public class M_AttackSystem : Module_Base
         }       
     }
 
-    public void EndAttack()
+    public void EndAttack(float InAttackDelay = 0)
     {
         if(NextCombo)
         {
@@ -69,6 +82,7 @@ public class M_AttackSystem : Module_Base
         {
             CurCombo = 0;
             NextCombo = false;
+            AttackDelay = InAttackDelay;
             owner.Stats.CharacterState = ECharacterState.Idle;
             owner.Animation.IdleTrigger();
         }
@@ -84,6 +98,8 @@ public class M_AttackSystem : Module_Base
 
     public void AttackHitCheck(float range)
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
+
         // 방향
         float direction = owner.transform.localScale.x > 0 ? 1f : -1f;
 

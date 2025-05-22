@@ -19,7 +19,7 @@ public class M_Damage : Module_Base
 
     private void Update()
     {
-        if(HitStopDurationTime > 0)
+        if (owner.Stats.CharacterState == ECharacterState.Hit)
         {
             HitStopDurationTime -= Time.deltaTime;
             if (HitStopDurationTime <= 0)
@@ -27,13 +27,17 @@ public class M_Damage : Module_Base
                 owner.Stats.CharacterState = ECharacterState.Idle;
             }
         }
-       
+        
+
     }
 
     // 데미지를 받을 함수
     public void TakeDamage(float InDamage, bool isCritical = false, bool IsHill = false)
     {
         if (owner.Stats.CharacterState == ECharacterState.Dead) return;
+        if (owner.Movement.GetIsSliding()) return; // 슬라이딩 중일 때는 데미지를 받지 않음
+
+
 
         // 치명타 데미지 적용
         if (isCritical)
@@ -41,12 +45,10 @@ public class M_Damage : Module_Base
             InDamage += (owner.Stats.GetCharacterStats().CriticalDamage * 0.01f);
         }
 
+        // 데미지 적용
+        owner.Stats.CurrentHP -= InDamage;
+
         
-        
-
-
-       
-
 
         // 데미지 텍스트 출력
         EDamageType damageType = EDamageType.Normal;
@@ -57,27 +59,31 @@ public class M_Damage : Module_Base
 
         Game_Mgr.Inst.SpawnDamageText(InDamage, owner.transform.position, damageType);
 
-
-        // 데미지 적용
-        owner.Stats.CurrentHP -= InDamage;
+        
         if (owner.Stats.CurrentHP <= 0f) // 죽었을 때
         {
-            owner.Stats.CharacterState = ECharacterState.Dead;
-            owner.Animation.DeadTrigger();
-
-            
-            return;
+            Dead();
         }
+        else  // 죽지 않았을때
+        {
+            owner.Stats.CharacterState = ECharacterState.Hit;
 
-        // 죽지 않았을때
-        owner.Stats.CharacterState = ECharacterState.Hit;
-       
-        owner.Animation.OnHit();
+            owner.Animation.OnHit();
+        }
+    }
+
+    public void Dead()
+    {
+        owner.Stats.CharacterState = ECharacterState.Dead;
+        owner.Animation.DeadTrigger();
     }
 
     public void EndHit()
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
+
         HitStopDurationTime = owner.Stats.GetCharacterStats().HitStopDuration;
+        
         owner.Animation.IdleTrigger();
     }
 

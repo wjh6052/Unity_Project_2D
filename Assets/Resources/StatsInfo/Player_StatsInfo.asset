@@ -19,6 +19,6 @@ MonoBehaviour:
     AttackPower: 10
     CriticalRate: 100
     CriticalDamage: 120
-    HitStopDuration: 1
+    HitStopDuration: 0
     Speed: 3
     JumpPower: 6

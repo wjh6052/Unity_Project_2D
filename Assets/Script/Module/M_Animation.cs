@@ -25,6 +25,7 @@ public class M_Animation : Module_Base
     // 애니메이션 파라미터
     public void IdleTrigger()
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
         if (!IsAnimParameter("IdleTrigger")) return;
 
         OwnerAnimator.SetTrigger("IdleTrigger");
@@ -32,6 +33,7 @@ public class M_Animation : Module_Base
 
     public void WalikingAnimator(float moveX)
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
         if (!IsAnimParameter("OnWaliking")) return;
 
         bool bOnMove = moveX != 0;
@@ -51,6 +53,7 @@ public class M_Animation : Module_Base
 
     public void OnJump()
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
         if (!IsAnimParameter("JumpTrigger")) return;
 
         OwnerAnimator.SetTrigger("JumpTrigger");
@@ -58,6 +61,7 @@ public class M_Animation : Module_Base
 
     public void OnFalling(bool bOnFalling)
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
         if (!IsAnimParameter("Falling")) return;
 
         OwnerAnimator.SetBool("Falling", bOnFalling);
@@ -65,6 +69,7 @@ public class M_Animation : Module_Base
 
     public void OnSliding(bool bOnSliding)
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
         if (!IsAnimParameter("Sliding")) return;
 
         OwnerAnimator.SetBool("Sliding", bOnSliding);
@@ -72,7 +77,9 @@ public class M_Animation : Module_Base
 
     public void AttackStart(int SkillNum)
     {
-        if(SkillNum == 0)
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
+
+        if (SkillNum == 0)
         {
             if (!IsAnimParameter("AttackTrigger")) return;
 
@@ -91,6 +98,7 @@ public class M_Animation : Module_Base
 
     public void OnHit()
     {
+        if (owner.Stats.CharacterState == ECharacterState.Dead) return;
         if (!IsAnimParameter("HitTrigger")) return;
 
         OwnerAnimator.SetTrigger("HitTrigger");

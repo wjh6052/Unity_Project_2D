@@ -22,6 +22,8 @@ public class Character_Mushroom : Character_Monster
 
     protected override void Update()
     {
+        if (this.Stats.CharacterState == ECharacterState.Dead) return;
+
         if (this.Stats.CharacterState == ECharacterState.Idle)
         {
             if (!TargetPlayer)
@@ -34,7 +36,7 @@ public class Character_Mushroom : Character_Monster
                 dis.Normalize();
                 this.Movement.SetMove(dis);
             }
-            else // 공격사러기 안일 경우
+            else // 공격사거리 안일 경우
             {
                 this.Movement.SetMove(Vector2.zero);
                 this.AttackSystem.OnAttack();

@@ -20,5 +20,5 @@ MonoBehaviour:
     CriticalRate: 0
     CriticalDamage: 120
     HitStopDuration: 1
-    Speed: 3
+    Speed: 1.5
     JumpPower: 6

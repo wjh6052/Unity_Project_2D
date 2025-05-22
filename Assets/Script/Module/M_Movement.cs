@@ -25,6 +25,7 @@ public class M_Movement : Module_Base
 
     // 슬라이딩
     bool IsSliding = false;
+    public bool GetIsSliding() { return IsSliding; }
 
     float SlideTimer = 0f;
 
@@ -127,12 +128,6 @@ public class M_Movement : Module_Base
 
     void MoveSliding()
     {
-        owner.Animation.OnSliding(true);
-        owner.Stats.CharacterState = ECharacterState.Sliding;
-        float facingDir = Mathf.Sign(owner.transform.localScale.x);
-        Rig2D.linearVelocity = new Vector2(facingDir * owner.Stats.SlideSpeed, Rig2D.linearVelocity.y);
-
-
         SlideTimer -= Time.fixedDeltaTime;
         if (SlideTimer <= 0f)
         {
@@ -140,7 +135,19 @@ public class M_Movement : Module_Base
             OwnerCollider.size = ColliderSize;
             IsSliding = false;
             owner.Animation.OnSliding(false);
+
+            return;
         }
+
+        // 상태 변경
+        owner.Stats.CharacterState = ECharacterState.Sliding;
+
+        // 애니메이션 실행
+        owner.Animation.OnSliding(true);
+
+
+        float facingDir = Mathf.Sign(owner.transform.localScale.x);
+        Rig2D.linearVelocity = new Vector2(facingDir * owner.Stats.SlideSpeed, Rig2D.linearVelocity.y);
     }
 
     // 점프

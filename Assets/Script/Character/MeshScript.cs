@@ -10,9 +10,9 @@ public class MeshScript : MonoBehaviour
         CharacterRoot = transform.parent.gameObject.GetComponent<Character_Base>();
     }
 
-    public void EndAttack()
+    public void EndAttack(float AttackDelay)
     {
-        CharacterRoot.AttackSystem.EndAttack();
+        CharacterRoot.AttackSystem.EndAttack(AttackDelay);
     }
 
     public void AttackHitCheck(float range)

@@ -19,7 +19,13 @@ public class M_Stats : Module_Base
     public ECharacterState CharacterState
     {
         get => _characterState;
-        set => _characterState = value;
+        set
+        {
+            if (_characterState == ECharacterState.Dead) return;
+
+            _characterState = value;
+        }
+
     }
 
 
@@ -34,7 +40,7 @@ public class M_Stats : Module_Base
     // 플레이어 전용
     // 슬라이딩
     public float SlideSpeed = 12.5f;    // 슬라이딩 속도
-    public float SlideDirection = 2f;   // 슬라이딩 시간
+    public float SlideDirection = 1f;   // 슬라이딩 시간
 
 
     
