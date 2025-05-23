@@ -22,8 +22,6 @@ public class Character_Mushroom : Character_Monster
 
     protected override void Update()
     {
-        if (this.Stats.CharacterState == ECharacterState.Dead) return;
-
         if (this.Stats.CharacterState == ECharacterState.Idle)
         {
             if (!TargetPlayer)

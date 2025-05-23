@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Interaction_Base : MonoBehaviour
 {
-
+    [Header("UI가 생성될 지점")]
+    public Transform UISpawnPoint;
     
     public virtual void UesInteraction()
     {
@@ -14,7 +15,7 @@ public class Interaction_Base : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
-            Game_Mgr.Inst.PlayerObject.PlayerUI.SpawnInteractionUI(this);
+            Game_Mgr.Inst.PlayerObject.PlayerUI.SpawnInteractionUI(this, UISpawnPoint.position);
         }
     }
 

@@ -16,7 +16,7 @@ MonoBehaviour:
     CharacterType: 1
     MaxHP: 100
     MaxStamina: 100
-    AttackPower: 10
+    AttackPower: 1
     CriticalRate: 100
     CriticalDamage: 120
     HitStopDuration: 0

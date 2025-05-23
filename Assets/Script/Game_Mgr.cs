@@ -24,7 +24,7 @@ public class Game_Mgr : MonoBehaviour
 
 
     [Header("이동할 맵")]
-    public string TestMapName;
+    public string MapName;
 
     //--- 싱글턴 패턴
     public static Game_Mgr Inst = null;
@@ -42,7 +42,22 @@ public class Game_Mgr : MonoBehaviour
         Application.targetFrameRate = 60;
 
         // 테스트
-        SceneManager.LoadScene(TestMapName, LoadSceneMode.Additive);
+        ChangeMap(MapName);
+    }
+
+
+    public void ChangeMap(string ChangeMapName)
+    {
+        if (ChangeMapName == "") return;
+
+        if (SceneManager.GetSceneByName(MapName).isLoaded)
+        {
+            SceneManager.UnloadSceneAsync(MapName);
+        }
+
+        MapName = ChangeMapName;
+
+        SceneManager.LoadScene(ChangeMapName, LoadSceneMode.Additive);
     }
 
     // 데미지 텍스트 스폰

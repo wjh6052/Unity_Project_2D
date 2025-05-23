@@ -63,6 +63,10 @@ public class M_Movement : Module_Base
         }
 
 
+        if (owner.Stats.CharacterState == ECharacterState.Dead || owner.Stats.CharacterState == ECharacterState.Hit)
+        {
+            return;
+        }
         // 점프 관련
         {
             IsGrounded = Physics2D.Raycast(owner.transform.position, Vector2.down, footOffset + groundCheckRadius, GroundLayer);

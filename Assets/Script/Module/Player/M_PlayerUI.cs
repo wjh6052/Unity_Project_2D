@@ -25,7 +25,7 @@ public class M_PlayerUI : Module_Base
         IDict.UesInteraction();
     }
 
-    public void SpawnInteractionUI(Interaction_Base InInteraction)
+    public void SpawnInteractionUI(Interaction_Base InInteraction, Vector3 InPos)
     {
         if (Game_Mgr.Inst.World_Canvas == null || Game_Mgr.Inst.InteractionUIRoot == null)
             return;
@@ -33,7 +33,7 @@ public class M_PlayerUI : Module_Base
         GameObject interactionUIR = Instantiate(Game_Mgr.Inst.InteractionUIRoot);
         interactionUIR.transform.SetParent(Game_Mgr.Inst.World_Canvas);
 
-        interactionUIR.transform.position = InInteraction.transform.position;
+        interactionUIR.transform.position = InPos;
 
         InteractionUIObject = interactionUIR;
         IDict = InInteraction;

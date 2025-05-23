@@ -12,6 +12,8 @@ public class M_Damage : Module_Base
 {
     float HitStopDurationTime = 0;
 
+    bool HitDuration = false;
+
     void Start()
     {
         
@@ -19,12 +21,14 @@ public class M_Damage : Module_Base
 
     private void Update()
     {
-        if (owner.Stats.CharacterState == ECharacterState.Hit)
+        if (owner.Stats.CharacterState == ECharacterState.Hit && HitDuration)
         {
             HitStopDurationTime -= Time.deltaTime;
             if (HitStopDurationTime <= 0)
             {
                 owner.Stats.CharacterState = ECharacterState.Idle;
+                HitDuration = false;
+                Debug.Log(1);
             }
         }
         
@@ -86,7 +90,8 @@ public class M_Damage : Module_Base
         if (owner.Stats.CharacterState == ECharacterState.Dead) return;
 
         HitStopDurationTime = owner.Stats.GetCharacterStats().HitStopDuration;
-        
+        HitDuration = true;
+
         owner.Animation.IdleTrigger();
     }
 
