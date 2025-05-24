@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsInfo
   CharacterStats:
     CharacterType: 2
-    MaxHP: 100
+    MaxHP: 30
     MaxStamina: 100
     AttackPower: 5
     CriticalRate: 0

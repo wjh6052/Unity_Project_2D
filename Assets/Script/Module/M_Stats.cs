@@ -14,41 +14,80 @@ public enum ECharacterState
 public class M_Stats : Module_Base
 {
     // 캐릭터의 상태
-    private ECharacterState _characterState = ECharacterState.Idle;
+    private ECharacterState _CharacterState = ECharacterState.Idle;
 
     public ECharacterState CharacterState
     {
-        get => _characterState;
+        get => _CharacterState;
         set
         {
-            if (_characterState == ECharacterState.Dead) return;
+            if (_CharacterState == ECharacterState.Dead) return;
 
-            _characterState = value;
+            _CharacterState = value;
         }
 
     }
 
 
-    FCharacterStats CharacterStats;
+    FCharacterStats _CharacterStats;
 
-    public FCharacterStats GetCharacterStats() { return CharacterStats; }
+    public FCharacterStats CharacterStats
+    {
+        get => _CharacterStats;
+        set => _CharacterStats = value;
+    }
 
-    public float CurrentHP;
-    public float CurrentStamina;
+
+    float _CurrentHP;
+    public float CurrentHP
+    {
+        get => _CurrentHP;
+        set
+        {
+            if (_CharacterState == ECharacterState.Dead) return;
+
+            _CurrentHP = value;
+
+            if(owner.CharacterType == ECharacterType.Player)
+                Game_Mgr.Inst.UIUpdate();
+        }
+
+    }
+
+    // 스테미너
+    float _CurrentStamina;
+    public float CurrentStamina
+    {
+        get => _CurrentStamina;
+        set
+        {
+            if (_CharacterState == ECharacterState.Dead) return;
+
+            _CurrentStamina = value;
+
+            if (owner.CharacterType == ECharacterType.Player)
+            {
+                Game_Mgr.Inst.UIUpdate();
+            }
+        }
+    }
+
 
 
     // 플레이어 전용
     // 슬라이딩
     public float SlideSpeed = 8f;    // 슬라이딩 속도
     public float SlideDirection = 0.3f;   // 슬라이딩 시간
-
-
     
 
 
-    
 
-  
+
+
+
+
+
+
     void Start()
     {
         foreach(CharacterStatsInfo statsInfo in GlobalValue.CharacterStatsArr)
@@ -60,9 +99,19 @@ public class M_Stats : Module_Base
                 CurrentHP = CharacterStats.MaxHP;
                 CurrentStamina = CharacterStats.MaxStamina;
             }
+        }       
+    }
+
+
+    private void Update()
+    {
+        // 스테미너가 풀인 아닌 경우
+        if(_CurrentStamina <= _CharacterStats.MaxStamina)
+        {
+            CurrentStamina += Time.deltaTime * 8;
         }
 
-        
     }
+
 
 }

@@ -28,7 +28,6 @@ public class M_Damage : Module_Base
             {
                 owner.Stats.CharacterState = ECharacterState.Idle;
                 HitDuration = false;
-                Debug.Log(1);
             }
         }
         
@@ -46,7 +45,7 @@ public class M_Damage : Module_Base
         // 치명타 데미지 적용
         if (isCritical)
         {
-            InDamage += (owner.Stats.GetCharacterStats().CriticalDamage * 0.01f);
+            InDamage += (owner.Stats.CharacterStats.CriticalDamage * 0.01f);
         }
 
         // 데미지 적용
@@ -89,7 +88,7 @@ public class M_Damage : Module_Base
     {
         if (owner.Stats.CharacterState == ECharacterState.Dead) return;
 
-        HitStopDurationTime = owner.Stats.GetCharacterStats().HitStopDuration;
+        HitStopDurationTime = owner.Stats.CharacterStats.HitStopDuration;
         HitDuration = true;
 
         owner.Animation.IdleTrigger();

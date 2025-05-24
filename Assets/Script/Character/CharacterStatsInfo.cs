@@ -30,6 +30,10 @@ public struct FCharacterStats
     public float Speed;
     [Header("점프 파워")]
     public float JumpPower;
+
+
+    [Header("점프 파워")]
+    public float SlidingStaminaCost; // 슬라이딩 시 소모되는 스테미너 양
 }
 
 [CreateAssetMenu(fileName = "_StatsInfo", menuName = "Add CharacterInfo/CharacterStatsInfo")]

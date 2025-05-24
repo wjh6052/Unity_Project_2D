@@ -24,7 +24,7 @@ public class DmgTxet_Ctrl : MonoBehaviour
         DamageText.text = "" + (int)InDamage;
         
 
-        Color textColor = new Color();
+        Color textColor = Color.yellow;
         switch(InEDamageType)
         {
             case EDamageType.Normal:

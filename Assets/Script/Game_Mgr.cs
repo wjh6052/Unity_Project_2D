@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine;
 
 public class Game_Mgr : MonoBehaviour
 {
@@ -9,25 +9,33 @@ public class Game_Mgr : MonoBehaviour
     public Character_Player PlayerObject;
 
 
-    [Header("월드 캔버스")]
-    public Transform World_Canvas = null;
-
-
-    [Header("데미지 텍스트")]
-    public GameObject DmgTxetRoot = null;
-
-
-    [Header("상호작용UI")]
-    public GameObject InteractionUIRoot = null;
-    
-
-
-
     [Header("이동할 맵")]
     public string MapName;
 
+
+    // 월드 켄버스
+    [Header("월드 캔버스")]
+    public Transform World_Canvas = null;
+    
+    [Header("데미지 텍스트")]
+    public GameObject DmgTxetRoot = null;
+    [Header("상호작용UI")]
+    public GameObject InteractionUIRoot = null;
+
+
+    // UI 켄버스
+    [Header("Hp바")]
+    public Image HpBar_Img = null;
+    [Header("스테미너바")]
+    public Image StaminaBar_Img = null;
+
+
+
+
     //--- 싱글턴 패턴
     public static Game_Mgr Inst = null;
+
+
 
 
     private void Awake()
@@ -35,6 +43,7 @@ public class Game_Mgr : MonoBehaviour
         Inst = this;
         GlobalValue.InitData();
     }
+
 
     void Start()
     {
@@ -46,6 +55,7 @@ public class Game_Mgr : MonoBehaviour
     }
 
 
+    // 맵 변경
     public void ChangeMap(string ChangeMapName)
     {
         if (ChangeMapName == "") return;
@@ -59,6 +69,7 @@ public class Game_Mgr : MonoBehaviour
 
         SceneManager.LoadScene(ChangeMapName, LoadSceneMode.Additive);
     }
+
 
     // 데미지 텍스트 스폰
     public void SpawnDamageText(float InDamage, Vector3 InPos, EDamageType InEDamageType)
@@ -80,9 +91,7 @@ public class Game_Mgr : MonoBehaviour
     }
 
 
-    // 상호작용 UI 스폰
-    
-
+    // 카메라
     public void SetCameraCollider(PolygonCollider2D InPolygonCollider2D)
     {
         if (!InPolygonCollider2D) return;
@@ -91,4 +100,22 @@ public class Game_Mgr : MonoBehaviour
 
 
     }
+
+
+    // 상호작용 UI 스폰
+    public void UIUpdate()
+    {
+        // HP바
+        HpBar_Img.fillAmount = PlayerObject.Stats.CurrentHP / PlayerObject.Stats.CharacterStats.MaxHP;
+
+
+        // 스테미너 바
+        StaminaBar_Img.fillAmount = PlayerObject.Stats.CurrentStamina / PlayerObject.Stats.CharacterStats.MaxStamina;
+
+
+
+
+    }
+
+
 }

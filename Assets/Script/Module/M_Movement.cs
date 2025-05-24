@@ -107,7 +107,10 @@ public class M_Movement : Module_Base
     // 슬라이딩
     public void OnSliding()
     {
-        switch(owner.Stats.CharacterState)
+        // 스테미너가 없는 경우 리턴 
+        if (owner.Stats.CurrentStamina - owner.Stats.CharacterStats.SlidingStaminaCost <= 0) return;
+
+        switch (owner.Stats.CharacterState)
         {
             case ECharacterState.Idle:
                 break;
@@ -119,6 +122,10 @@ public class M_Movement : Module_Base
             default:
                 return;
         }
+        
+
+        // 스테미너 소모
+        owner.Stats.CurrentStamina -= owner.Stats.CharacterStats.SlidingStaminaCost;
 
         SlideTimer = owner.Stats.SlideDirection;
         IsSliding = true;
@@ -128,6 +135,8 @@ public class M_Movement : Module_Base
 
         // 애니메이션 실행
         owner.Animation.OnSliding(true);
+
+        
     }
 
     void MoveSliding()
@@ -175,7 +184,7 @@ public class M_Movement : Module_Base
             else // 일반 점프
             {
                 Rig2D.linearVelocity = new Vector2(Rig2D.linearVelocity.x, 0);
-                Rig2D.AddForce(Vector2.up * owner.Stats.GetCharacterStats().JumpPower, ForceMode2D.Impulse);
+                Rig2D.AddForce(Vector2.up * owner.Stats.CharacterStats.JumpPower, ForceMode2D.Impulse);
 
                 IsJumping = true;
                 owner.Animation.OnJump();
@@ -206,7 +215,7 @@ public class M_Movement : Module_Base
             return;
         }
 
-        float speed = moveInput.x * owner.Stats.GetCharacterStats().Speed;
+        float speed = moveInput.x * owner.Stats.CharacterStats.Speed;
         if (owner.Stats.CharacterState == ECharacterState.Attacking)
             speed /= 2;
 
