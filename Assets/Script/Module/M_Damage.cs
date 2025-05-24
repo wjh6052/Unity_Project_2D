@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public enum EDamageType
 {
@@ -75,14 +76,6 @@ public class M_Damage : Module_Base
         }
     }
 
-    public void Dead()
-    {
-        owner.Stats.CharacterState = ECharacterState.Dead;
-        owner.Movement.SetMove(Vector2.zero);
-
-
-        owner.Animation.DeadTrigger();
-    }
 
     public void EndHit()
     {
@@ -93,6 +86,17 @@ public class M_Damage : Module_Base
 
         owner.Animation.IdleTrigger();
     }
+
+
+    public void Dead()
+    {
+        owner.Stats.CharacterState = ECharacterState.Dead;
+        owner.Movement.SetMove(Vector2.zero);
+
+
+        owner.Animation.DeadTrigger();
+    }
+   
 
     public IEnumerator Dead(float DestroyTime = 1.0f)
     {
@@ -131,6 +135,13 @@ public class M_Damage : Module_Base
 
         //---------------------
 
+        if(owner.CharacterType != ECharacterType.Player)
+        {
+            Character_Monster monster = (Character_Monster)owner;
+
+            Data_Mgr.Score += monster.KillScore;
+        }
+        
         // Á¦°Å
         Destroy(owner.gameObject);
     }

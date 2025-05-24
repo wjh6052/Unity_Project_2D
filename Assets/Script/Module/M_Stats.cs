@@ -29,11 +29,26 @@ public class M_Stats : Module_Base
     }
 
 
+    // ½ºÅÝ
     FCharacterStats _CharacterStats;
 
     public FCharacterStats CharacterStats
     {
-        get => _CharacterStats;
+        get
+        {
+            FCharacterStats temp = _CharacterStats;
+
+            if (owner.CharacterType == ECharacterType.Player)
+            {
+                temp.MaxHP += Data_Mgr.AddMaxHP;
+                temp.MaxStamina += Data_Mgr.AddMaxStamina;
+                temp.AttackPower += Data_Mgr.AddAttackPower;
+                temp.CriticalRate += Data_Mgr.AddCriticalRate;
+                temp.CriticalDamage += Data_Mgr.AddCriticalDamage;
+            }
+
+            return temp;
+        }
         set => _CharacterStats = value;
     }
 

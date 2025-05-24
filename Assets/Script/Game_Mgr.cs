@@ -42,6 +42,7 @@ public class Game_Mgr : MonoBehaviour
     {
         Inst = this;
         GlobalValue.InitData();
+        Data_Mgr.LoadGameData();
     }
 
 
@@ -117,5 +118,12 @@ public class Game_Mgr : MonoBehaviour
 
     }
 
+
+    // ≈ª√‚
+    public void OnPlayerEscape()
+    {
+
+
+    }
 
 }

@@ -17,6 +17,7 @@ public struct FCharacterStats
 
     [Header("공격력")]
     public float AttackPower;
+
     [Header("치명타 확률 %")]
     public float CriticalRate;
     [Header("치명타 데미지 %")]
@@ -35,6 +36,7 @@ public struct FCharacterStats
     [Header("점프 파워")]
     public float SlidingStaminaCost; // 슬라이딩 시 소모되는 스테미너 양
 }
+
 
 [CreateAssetMenu(fileName = "_StatsInfo", menuName = "Add CharacterInfo/CharacterStatsInfo")]
 public class CharacterStatsInfo : ScriptableObject
